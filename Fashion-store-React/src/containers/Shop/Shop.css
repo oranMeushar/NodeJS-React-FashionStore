@@ -1,0 +1,26 @@
+
+
+.shop-items-row .images-container{
+    display:grid;
+    grid-template-columns: repeat(4, minmax(min-content, 1fr));
+    justify-items: stretch;
+    grid-column-gap: 2vmin;
+    grid-row-gap: 2vmin;
+}
+
+.shop-items-row h1{
+    margin: 4vmin 0;
+    font-size:4vmin;
+    letter-spacing:0.2vmin;
+    text-transform: uppercase;
+    text-shadow: 0.6rem 0.4rem 0.5rem rgba(0, 0, 0, 0.336);
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(85, 80, 80);
+    cursor: pointer;
+}
+
+@media (max-width:900px){
+    .shop-items-row .images-container{
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    }
+}

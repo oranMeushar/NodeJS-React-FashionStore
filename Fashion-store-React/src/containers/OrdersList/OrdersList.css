@@ -1,0 +1,27 @@
+.OrderList{
+    margin-top: 10vmin;
+}
+.OrderList-titles{
+    border-bottom:1px solid grey;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(min-content, 1fr));
+    justify-items: center;
+    padding-bottom: 2vmin;
+    border-color: lightblue;
+    
+}
+.OrderList-titles h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8vmin;
+}
+
+.OrderList-empty-msg{
+    text-align: center;
+    width:fit-content;
+    padding:1vmin 2vmin;
+    margin: 2vmin auto;
+    border-radius: 0.3rem;;
+    letter-spacing:0.3vmin;
+    background-color:rgba(32, 178, 171, 0.24);
+    color:darkgreen;
+}

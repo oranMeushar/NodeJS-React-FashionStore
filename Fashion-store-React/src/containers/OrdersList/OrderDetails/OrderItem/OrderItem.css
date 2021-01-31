@@ -1,0 +1,22 @@
+.OrderItem{
+    border-bottom:1px solid grey;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(min-content, 1fr));
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 2vmin;
+    font-size: 2vmin;
+    margin-top:2vmin;
+}
+
+.OrderItem img{
+    width:12vmin;
+    height:12vmin;
+}
+
+.OrderItem-quantity{
+    margin:0 1vmin;
+    font-size: 2.5vmin;
+}
+
+

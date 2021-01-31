@@ -1,0 +1,15 @@
+.Button.blue{
+    background-color:lightblue;
+}
+
+.Button.black{
+    background-color:rgb(82, 80, 80);
+}
+
+.Button{
+    font-size:2.5vmin;
+    padding:0.5vmin 1vmin;
+    letter-spacing:0.2vmin;text-transform: uppercase;
+    color:white;
+    cursor: pointer;
+}

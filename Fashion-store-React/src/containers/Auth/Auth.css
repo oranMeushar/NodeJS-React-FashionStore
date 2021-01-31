@@ -1,0 +1,13 @@
+.auth{
+    display:grid;
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    justify-items: center;
+    padding-top: 3vmin;
+}
+
+@media (max-width: 900px){
+    .auth{
+        grid-template-columns: repeat(1, minmax(min-content, 1fr));
+        grid-row-gap: 5vmin;
+    }
+}

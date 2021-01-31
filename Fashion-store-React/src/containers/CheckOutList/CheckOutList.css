@@ -1,0 +1,72 @@
+.CheckOutList{
+    width:70%;
+    margin-top: 10vmin;
+}
+.CheckOutList-titles{
+    border-bottom:1px solid grey;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(min-content, 1fr));
+    justify-items: center;
+    padding-bottom: 2vmin;
+}
+.CheckOutList-titles h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+.CheckOutList-footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.CheckOutList-totalPrice{
+    position: relative;
+    margin: 3vmin 0;
+    font-size: 3vmin;
+    z-index: -20;
+}
+
+.CheckOutList-footer-buttons{
+    display:flex;
+    align-items: center;
+}
+
+.CheckOutList-footer-buttons button{
+    margin-left: 2vmin;
+    padding:0.4vmin 0.8vmin;
+    border-radius: 0.8rem;
+    font-size:2vmin;
+    cursor: pointer;
+    color:white;
+    background-color:rgb(223, 180, 141);
+    outline:none;
+    border: none;
+}
+
+.CheckOutList-info{
+    position:absolute;
+    top: -20%;
+    left: 40%;
+    font-size:2vmin;
+    background-color:rgba(245, 206, 170, 0.801);
+    line-height:3vmin;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    transition:all 0.3s linear;
+}
+
+.CheckOutList-info.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media(max-width:600px){
+    .CheckOutList{
+        width:100%;
+    }
+    .CheckOutList-titles h2{
+        font-size:2.2vmin;
+    }
+}

@@ -1,0 +1,50 @@
+.CheckOutItem{
+    border-bottom:1px solid grey;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(min-content, 1fr));
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 2vmin;
+    font-size: 2vmin;
+    margin-top:2vmin;
+    text-align: center;
+}
+
+.CheckOutItem-buttonWrapper button{
+    background:linear-gradient(rgba(194, 190, 190, 0.11),rgba(128, 128, 128, 0.11),rgba(190, 186, 186, 0.11));
+    border:none;
+    border-radius:0.2rem;
+    cursor: pointer;
+
+}
+.CheckOutItem-removeItems{
+    background-color:transparent;
+    border:none;
+    outline:none;
+    cursor: pointer;
+}
+
+.CheckOutItem h2{
+    font-size: 2.2vmin;
+}
+
+.CheckOutItem img{
+    width:12vmin;
+    height:12vmin;
+}
+.CheckOutItem-quantity{
+    margin:0 1vmin;
+    font-size: 2.5vmin;
+}
+
+.CheckOutItem-quantity{
+    font-size: 2.5vmin;
+}
+.CheckOutItem-removeItems{
+    color:red;
+}
+
+.CheckOutItem-buttonWrapper{
+    display:flex;
+    align-items: center;
+}

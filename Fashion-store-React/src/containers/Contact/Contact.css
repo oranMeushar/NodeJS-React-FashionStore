@@ -1,0 +1,59 @@
+.Contact{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contact-form{
+    box-shadow: 0.8rem 0.6rem 1rem rgba(0, 0, 0, 0.055);
+    font-size: 3vmin;
+    letter-spacing:0.3vmin;
+}
+
+.Contact-header{
+    background-color:lightgray;
+    padding:4vmin;
+}
+
+.Contact-main{
+    display:flex;
+    flex-direction: column;
+    padding:4vmin;
+}
+
+.Contact-main strong{
+    color:red;
+}
+
+.Contact-main input,
+.Contact-main textarea{
+    margin-bottom: 5vmin;
+    outline:none;
+}
+
+.Contact-main button{
+    align-self: center;
+    outline:none;
+    padding:1vmin 2vmin;
+}
+
+.Contact-responseMessage-green{
+    background-color:rgba(0, 128, 0, 0.300);
+    font-size: 2vmin;
+    width:fit-content;
+    padding:0 1vmin;
+    border-radius: 0.5rem;
+    line-height:5vmin;
+    margin:0 auto;
+}
+
+.Contact-responseMessage-red{
+    background-color:rgba(255, 0, 0, 0.300);
+    font-size: 2vmin;
+    width:fit-content;
+    padding:0 1vmin;
+    border-radius: 0.5rem;
+    line-height:5vmin;
+    margin:0 auto;
+}

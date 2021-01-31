@@ -1,0 +1,28 @@
+.Cart{
+    padding:4vmin;
+    position: absolute;
+    bottom:-850%;
+    left:-700%;
+    height: 40vmin;
+    width: 40vmin;
+    overflow: auto;
+    border:1px solid grey;
+    z-index: 2;
+    background-color:white;
+    transform: scale(0);
+    transform-origin: top right;
+    transition:transform 0.3s linear;
+    text-align: center;
+}
+.Cart.cart-active{
+    transform: scale(1);
+}
+
+.Cart-checkout{
+    font-size:3vmin;
+    padding:2vmin 4vmin;
+    margin: 0 auto;
+    outline:none;
+    cursor: pointer;
+    margin-top: 5vmin;
+}

@@ -1,0 +1,38 @@
+.Order{
+    border-bottom:1px solid grey;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(min-content, 1fr));
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 2vmin;
+    font-size: 2vmin;
+    margin-top:4vmin;
+    position: relative;
+}
+
+.Order h2{
+    font-size: 2.8vmin;
+}
+
+.Order button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity:0;
+    visibility:hidden;
+    color:red;
+    cursor: pointer;
+    background-color:transparent;
+    border:none;
+    outline:none;
+}
+.Order:hover button{
+    opacity:1;
+    visibility:visible;
+}
+
+.Order-link-details{
+    color:blue;
+    font-size: 2.5vmin;
+    text-decoration: none;
+}

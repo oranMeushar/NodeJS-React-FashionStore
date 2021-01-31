@@ -1,0 +1,112 @@
+.form-container{
+    line-height: 10vmin;
+    font-size:3vmin;
+    box-shadow: 0.8rem 0.6rem 1rem rgba(0, 0, 0, 0.014);
+    width:fit-content;
+    padding:2vmin;
+}
+.form-container h1, .form-container p{
+    text-align: center;
+}
+
+.form-container label {
+    position:relative;
+    width:70%;
+    margin: 0 auto;
+}
+
+.form-container span {
+    position:absolute;
+    left:15%;
+    top:0;
+    opacity:0.5;
+    transition: all 0.3s ease;   
+}
+
+.form-container-form{
+    display:flex;
+    flex-direction: column;  
+    text-align: center;  
+}
+
+input:focus + span,
+input:not(:placeholder-shown) + span {
+    opacity:1;
+    transform: scale(0.75) translateY(-70%);
+}
+
+.form-container-form input{
+    outline:none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width:70%;
+    background-color:#c0c5ce00;
+    letter-spacing:0.1vmin;
+}
+
+
+.buttons-wrapper {
+    text-align:center;
+}
+.buttons-wrapper Button:not(:last-child){
+    margin-right: 3vmin;
+}
+.form-container-form input:not(:last-child){
+    margin-bottom: 5vmin;   
+}
+
+.form-container input.green{
+    background-color:rgba(0, 128, 0, 0.300);
+}
+
+.form-container input.red{
+    background-color:rgba(255, 0, 0, 0.300);
+}
+
+.form-container .error-message{
+    width:fit-content;
+    line-height: 5vmin;
+    padding:0 1vmin;
+    margin:0 auto;
+    background-color:rgba(255, 0, 0, 0.300);
+}
+
+.forgot-password{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3vmin;
+    letter-spacing:0.3vmin;
+    text-transform: capitalize;
+    text-decoration: none;
+    color:blue;
+}
+
+.form-container-msg-green{
+    background-color:rgba(0, 128, 0, 0.300);
+    font-size: 2vmin;
+    width:fit-content;
+    padding:0 1vmin;
+    border-radius: 0.5rem;
+    line-height:5vmin;
+    margin:0 auto;
+}
+
+.form-container-msg-red{
+    background-color:rgba(255, 0, 0, 0.300);
+    font-size: 2vmin;
+    width:fit-content;
+    padding:0 1vmin;
+    border-radius: 0.5rem;
+    line-height:5vmin;
+    margin:0 auto;
+}
+
+.form-password-min-length{
+    color:rgb(163, 17, 17);
+    opacity: 1;
+    line-height: 2vmin;
+    font-size: 2vmin;
+    transform:translateY(7.5vmin);
+}

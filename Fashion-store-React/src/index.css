@@ -1,0 +1,14 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+body{
+  padding:6vmin;
+  background-color:#c0c5ce23;
+}

@@ -1,0 +1,26 @@
+.OrderDetails{
+    margin-top: 10vmin;
+}
+.OrderDetails-titles{
+    border-bottom:1px solid grey;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(min-content, 1fr));
+    justify-items: center;
+    padding-bottom: 2vmin;
+}
+.OrderDetails-titles h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+.OrderDetails-totalPrice{
+    margin: 3vmin 0;
+    font-size: 3vmin;
+}
+
+.OrdersDetails-error-msg{
+    text-align: center;
+    background-color:rgb(216, 122, 122);
+    width:fit-content;
+    padding:1vmin 2vmin;
+    margin: 8vmin auto;
+}

@@ -1,0 +1,36 @@
+.CartItem{
+    position: relative;
+    display:flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:3vmin 0;
+    border-bottom:1px solid lightgray;
+}
+
+.CartItem-img-wrapper{
+    width:10vmin;
+    height: 100%;
+    margin-right: 4vmin;
+}
+
+.CartItem-img-wrapper img{
+    width:100%;
+    object-fit:cover;   
+}
+
+.CartItem-info{
+    font-size: 2vmin;
+    margin-right: 4vmin;
+}
+
+.CartItem-remove{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size:3vmin;
+    cursor: pointer;
+    color:red;
+    outline:none;
+    border:none;
+    background-color:transparent;
+}
