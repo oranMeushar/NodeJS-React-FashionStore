@@ -4,7 +4,7 @@ const catchAsync = require('../middleware/catchAsync');
 
 
 const getOrders = catchAsync(async(req, res, next) => {
-    const data = await Order.find().select('-__v');
+    const data = await Order.find({userId:req.user._id}).select('-__v');
     res.status(200).json({
         status:'Success',
         data
@@ -30,6 +30,7 @@ const getOrder = catchAsync(async(req, res, next) => {
 });
 
 const postOrder = catchAsync(async(req, res, next) => {
+    req.body.userId = req.user._id;
     const order = await Order.create(req.body);
     res.status(200).json({
         status:'Success',

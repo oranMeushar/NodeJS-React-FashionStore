@@ -43,6 +43,10 @@ const ordersSchema = new mongoose.Schema({
         type:'number',
         required:[true, 'Total price is required']
     },
+    userId:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'User'
+    },
     createdAt:{
         type:'string',
     }
